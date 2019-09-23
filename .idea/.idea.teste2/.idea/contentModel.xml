@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\creep\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\creep\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_teste2.-521802238.00" t="ExcludeRecursive" />
+    <e p="C:\Users\creep\teste2" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="2D SpritePack" t="Include">
+          <e p="Demo" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CameraControlla.cs" t="Include" />
+              <e p="Portal.cs" t="Include" />
+              <e p="RestartLevel.cs" t="Include" />
+              <e p="Saw.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Day Night Cycle" t="Include">
+          <e p="Editor" t="Include">
+            <e p="DayNightControllerEditor.cs" t="Include" />
+          </e>
+          <e p="ReadMe.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="DayNightController.cs" t="Include" />
+            <e p="DemoScripts" t="Include">
+              <e p="RoatateCamera.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Fireball" t="Include">
+          <e p="Fireball.cs" t="Include" />
+        </e>
+        <e p="fish" t="Include">
+          <e p="fishScript.cs" t="Include" />
+        </e>
+        <e p="Knight Files" t="Include">
+          <e p="Read Me.txt" t="Include" />
+        </e>
+        <e p="MapGenerator.cs" t="Include" />
+        <e p="platform.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="GameManager.cs" t="Include" />
+          <e p="Pause.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
+          <e p="script.cs" t="Include" />
+        </e>
+        <e p="til.cs" t="Include" />
+        <e p="zombie" t="Include">
+          <e p="zombie.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="teste2.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
