@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour{
@@ -10,6 +11,7 @@ public class Player : MonoBehaviour{
     private GameObject fireball;
     private Rigidbody2D fireballRigidBody;
     private SpriteRenderer fireballSpriteRender;
+  
 
     public Text textLives;
     public Text textCoins;
@@ -30,6 +32,12 @@ public class Player : MonoBehaviour{
     private bool leftBall = false;
     private bool mobCollide;
     private bool canTakeDamage = true;
+
+    public GameObject finished;
+    public Text finishedScore;
+
+    
+    public Joystick joystick;
 
 
     // Start is called before the first frame update
@@ -52,10 +60,14 @@ public class Player : MonoBehaviour{
             _animator.SetBool("die", true);
 
 
-        float movimento = Input.GetAxis("Horizontal");
-
+        float movimento = 0;
+        if (joystick.Horizontal >= .3f || joystick.Horizontal <= -.3f)
+            movimento = joystick.Horizontal;
+        else
+            movimento = 0;
+        
         _rigidbody2D.velocity = new Vector2((float) (movimento * maxVelocity), _rigidbody2D.velocity.y);
-
+        
 
         if (movimento < 0){
             leftBall = true;
@@ -75,18 +87,14 @@ public class Player : MonoBehaviour{
         else
             _animator.SetBool("andando", false);
 
+        
 
-        if (Input.GetKeyDown(KeyCode.F)){
-            var fireballInst = Instantiate(fireballRigidBody, transform.position, Quaternion.Euler(new Vector2(5, 0)));
-            if (leftBall){
-                fireballInst.velocity = new Vector2(-fireballSpeed, 0);
-            }
-            else{
-                fireballInst.velocity = new Vector2(fireballSpeed, 0);
-            }
-        }
+     
+    }
 
-        if (Input.GetKeyDown(KeyCode.Space) && maxJumpTimes < 2){
+
+    public void jump(){
+        if (maxJumpTimes < 2){
             _rigidbody2D.AddForce(new Vector2(0, jumpForce));
             _animator.SetBool("jump", true);
             maxJumpTimes++;
@@ -96,7 +104,18 @@ public class Player : MonoBehaviour{
         }
     }
 
-
+    public void fire(){
+      
+            var fireballInst = Instantiate(fireballRigidBody, transform.position, Quaternion.Euler(new Vector2(5, 0)));
+            if (leftBall){
+                fireballInst.velocity = new Vector2(-fireballSpeed, 0);
+            }
+            else{
+                fireballInst.velocity = new Vector2(fireballSpeed, 0);
+            }
+        
+    }
+    
     public void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.CompareTag("Coin")){
             GetComponent<AudioSource>().Play();
@@ -129,8 +148,17 @@ public class Player : MonoBehaviour{
         if (collision2D.gameObject.CompareTag("Plataformas")){
             maxJumpTimes = 0;
         }
+
+        if (collision2D.gameObject.CompareTag("endbar")){
+            finishGame();
+        }
     }
 
+    public void finishGame(){
+        finished.SetActive(true);
+        finishedScore.text = coins.ToString();
+
+    }
     public void OnCollisionExit2D(Collision2D collision2D){
         if (collision2D.gameObject.CompareTag("Animal") || collision2D.gameObject.CompareTag("Saw")){
             _spriteRenderer.color = new Color(255, 255, 255);
@@ -162,11 +190,12 @@ public class Player : MonoBehaviour{
 
 
     public void restartGame(){
-        Application.LoadLevel(0);
+        Application.LoadLevel(1);
         Time.timeScale = 1;
     }
 
     public void exitGame(){
-        Application.Quit();
+        SceneManager.LoadScene(0);
     }
+
 }

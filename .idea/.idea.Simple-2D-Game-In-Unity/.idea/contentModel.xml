@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\creep\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\creep\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Simple-2D-Game-In-Unity.-1656061510.00" t="ExcludeRecursive" />
+    <e p="C:\Users\creep\Simple-2D-Game-In-Unity" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="2D SpritePack" t="Include">
+          <e p="Demo" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CameraControlla.cs" t="Include" />
+              <e p="Portal.cs" t="Include" />
+              <e p="RestartLevel.cs" t="Include" />
+              <e p="Saw.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Day Night Cycle" t="Include">
+          <e p="Editor" t="Include">
+            <e p="DayNightControllerEditor.cs" t="Include" />
+          </e>
+          <e p="ReadMe.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="DayNightController.cs" t="Include" />
+            <e p="DemoScripts" t="Include">
+              <e p="RoatateCamera.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="FinalVignette" t="Include">
+          <e p="Assets" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="FinalVignette.cs" t="Include" />
+              <e p="FinalVignetteCommandBuffer.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="FinalVignette.shader" t="Include" />
+            </e>
+          </e>
+          <e p="Documentation" t="Include">
+            <e p="ReadMe.txt" t="Include" />
+          </e>
+        </e>
+        <e p="fireball" t="Include">
+          <e p="fireball.cs" t="Include" />
+        </e>
+        <e p="fish" t="Include">
+          <e p="fishScript.cs" t="Include" />
+        </e>
+        <e p="Joystick Pack" t="Include">
+          <e p="Examples" t="Include">
+            <e p="JoystickPlayerExample.cs" t="Include" />
+            <e p="JoystickSetterExample.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Base" t="Include">
+              <e p="Joystick.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="DynamicJoystickEditor.cs" t="Include" />
+              <e p="FloatingJoystickEditor.cs" t="Include" />
+              <e p="JoystickEditor.cs" t="Include" />
+              <e p="VariableJoystickEditor.cs" t="Include" />
+            </e>
+            <e p="Joysticks" t="Include">
+              <e p="DynamicJoystick.cs" t="Include" />
+              <e p="FixedJoystick.cs" t="Include" />
+              <e p="FloatingJoystick.cs" t="Include" />
+              <e p="VariableJoystick.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Knight Files" t="Include">
+          <e p="Read Me.txt" t="Include" />
+        </e>
+        <e p="MainMe.cs" t="Include" />
+        <e p="MapGenerator.cs" t="Include" />
+        <e p="MobileBloom" t="Include">
+          <e p="MobileBloom.cs" t="Include" />
+          <e p="MobileBloom.shader" t="Include" />
+          <e p="Move.cs" t="Include" />
+        </e>
+        <e p="platform.cs" t="Include" />
+        <e p="PlayMenu.cs" t="Include" />
+        <e p="Realistic Hail Set" t="Include">
+          <e p="Demo Scene" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="DemoSceneController.cs" t="Include" />
+            </e>
+          </e>
+          <e p="ReadMe.txt" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="GameManager.cs" t="Include" />
+          <e p="Pause.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
+          <e p="script.cs" t="Include" />
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Examples &amp; Extras" t="Include">
+            <e p="Fonts" t="Include">
+              <e p="Anton OFL.txt" t="Include" />
+              <e p="Bangers - OFL.txt" t="Include" />
+              <e p="LiberationSans - OFL.txt" t="Include" />
+              <e p="NotoSans - License.txt" t="Include" />
+              <e p="Oswald Bold - OFL.txt" t="Include" />
+              <e p="Oswald-Bold - OFL.txt" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Benchmark01.cs" t="Include" />
+              <e p="Benchmark01_UGUI.cs" t="Include" />
+              <e p="Benchmark02.cs" t="Include" />
+              <e p="Benchmark03.cs" t="Include" />
+              <e p="Benchmark04.cs" t="Include" />
+              <e p="CameraController.cs" t="Include" />
+              <e p="ChatController.cs" t="Include" />
+              <e p="EnvMapAnimator.cs" t="Include" />
+              <e p="ObjectSpin.cs" t="Include" />
+              <e p="ShaderPropAnimator.cs" t="Include" />
+              <e p="SimpleScript.cs" t="Include" />
+              <e p="SkewTextExample.cs" t="Include" />
+              <e p="TeleType.cs" t="Include" />
+              <e p="TextConsoleSimulator.cs" t="Include" />
+              <e p="TextMeshProFloatingText.cs" t="Include" />
+              <e p="TextMeshSpawner.cs" t="Include" />
+              <e p="TMP_DigitValidator.cs" t="Include" />
+              <e p="TMP_ExampleScript_01.cs" t="Include" />
+              <e p="TMP_FrameRateCounter.cs" t="Include" />
+              <e p="TMP_PhoneNumberValidator.cs" t="Include" />
+              <e p="TMP_TextEventCheck.cs" t="Include" />
+              <e p="TMP_TextEventHandler.cs" t="Include" />
+              <e p="TMP_TextInfoDebugTool.cs" t="Include" />
+              <e p="TMP_TextSelector_A.cs" t="Include" />
+              <e p="TMP_TextSelector_B.cs" t="Include" />
+              <e p="TMP_UiFrameRateCounter.cs" t="Include" />
+              <e p="TMPro_InstructionOverlay.cs" t="Include" />
+              <e p="VertexColorCycler.cs" t="Include" />
+              <e p="VertexJitter.cs" t="Include" />
+              <e p="VertexShakeA.cs" t="Include" />
+              <e p="VertexShakeB.cs" t="Include" />
+              <e p="VertexZoom.cs" t="Include" />
+              <e p="WarpTextExample.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+        <e p="textPass.cs" t="Include" />
+        <e p="til.cs" t="Include" />
+        <e p="UB" t="Include">
+          <e p="Simple2dWeatherEffects" t="Include">
+            <e p="LWRP" t="Include">
+              <e p="D2Fogs.shader" t="Include" />
+              <e p="D2FogsNoiseTex.shader" t="Include" />
+              <e p="D2FogsNoiseTexPE.cs" t="Include" />
+              <e p="D2FogsNoiseTexPESecond.cs" t="Include" />
+              <e p="D2FogsPE.cs" t="Include" />
+              <e p="D2FogsPESecond.cs" t="Include" />
+              <e p="EffectBase.cs" t="Include" />
+            </e>
+            <e p="Standard" t="Include">
+              <e p="D2Fogs.shader" t="Include" />
+              <e p="D2FogsNoiseTex.shader" t="Include" />
+              <e p="D2FogsNoiseTexPE.cs" t="Include" />
+              <e p="D2FogsPE.cs" t="Include" />
+              <e p="EffectBase.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="zombie" t="Include">
+          <e p="zombie.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Simple-2D-Game-In-Unity.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

@@ -8,6 +8,8 @@ TagManager:
   - Coin
   - Animal
   - fireball
+  - Saw
+  - endbar
   layers:
   - Default
   - TransparentFX

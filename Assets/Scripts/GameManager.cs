@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour{
     public Text textPause;
     public Text lives;
     public Text textCoins;
+    public GameObject finished;
+    public Text finishedScore;
 
     public bool gameOverBool = false;
     public bool isPaused = false;
@@ -51,4 +53,10 @@ public class GameManager : MonoBehaviour{
             game_over.SetActive(false);
         }
     }
+    
+    
+    
+    
+    
+ 
 }
