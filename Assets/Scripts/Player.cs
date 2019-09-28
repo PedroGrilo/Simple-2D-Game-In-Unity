@@ -155,6 +155,7 @@ public class Player : MonoBehaviour{
     public void finishGame(){
         finished.SetActive(true);
         finishedScore.text = coins.ToString();
+        Time.timeScale = 0;
     }
 
     public void OnCollisionExit2D(Collision2D collision2D){
