@@ -11,16 +11,17 @@ public class Player : MonoBehaviour{
     private GameObject fireball;
     private Rigidbody2D fireballRigidBody;
     private SpriteRenderer fireballSpriteRender;
-  
+
 
     public Text textLives;
     public Text textCoins;
     public Text infoCoinsEarned;
+    public Text textBalls;
 
     public float timeToDeath;
     public float fireballSpeed = 15f;
     public double maxVelocity;
-
+    public int initialFireBalls;
 
     public int lives;
     public int coins;
@@ -36,7 +37,7 @@ public class Player : MonoBehaviour{
     public GameObject finished;
     public Text finishedScore;
 
-    
+
     public Joystick joystick;
 
 
@@ -56,18 +57,23 @@ public class Player : MonoBehaviour{
 
     // Update is called once per frame
     public void Update(){
+        textLives.text = lives.ToString();
+        textBalls.text = initialFireBalls.ToString();
+        textCoins.text = coins.ToString();
+
+        float movimento = 0;
+
         if (lives <= 0)
             _animator.SetBool("die", true);
 
 
-        float movimento = 0;
         if (joystick.Horizontal >= .3f || joystick.Horizontal <= -.3f)
             movimento = joystick.Horizontal;
         else
             movimento = 0;
-        
+
         _rigidbody2D.velocity = new Vector2((float) (movimento * maxVelocity), _rigidbody2D.velocity.y);
-        
+
 
         if (movimento < 0){
             leftBall = true;
@@ -86,36 +92,29 @@ public class Player : MonoBehaviour{
             _animator.SetBool("andando", true);
         else
             _animator.SetBool("andando", false);
-
-        
-
-     
     }
 
 
-    public void jump(){
+    public void Jump(){
+        _animator.SetBool("jump", true);
         if (maxJumpTimes < 2){
             _rigidbody2D.AddForce(new Vector2(0, jumpForce));
-            _animator.SetBool("jump", true);
             maxJumpTimes++;
-        }
-        else{
-            _animator.SetBool("jump", false);
         }
     }
 
     public void fire(){
-      
+        if(initialFireBalls > 0){
+            initialFireBalls--;
             var fireballInst = Instantiate(fireballRigidBody, transform.position, Quaternion.Euler(new Vector2(5, 0)));
-            if (leftBall){
-                fireballInst.velocity = new Vector2(-fireballSpeed, 0);
-            }
-            else{
-                fireballInst.velocity = new Vector2(fireballSpeed, 0);
-            }
-        
+                if (leftBall){
+                    fireballInst.velocity = new Vector2(-fireballSpeed, 0);
+                }else{
+                    fireballInst.velocity = new Vector2(fireballSpeed, 0);
+                }
+        }
     }
-    
+
     public void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.CompareTag("Coin")){
             GetComponent<AudioSource>().Play();
@@ -123,7 +122,6 @@ public class Player : MonoBehaviour{
             infoCoinsEarned.text = "+" + instaCoins;
             infoCoinsEarned.fontSize += 10;
             coins += emeraldPrice;
-            textCoins.text = coins.ToString();
             Destroy(other.gameObject);
         }
     }
@@ -131,7 +129,6 @@ public class Player : MonoBehaviour{
 
     private void takeDamage(){
         lives--;
-        textLives.text = lives.ToString();
     }
 
     public void OnCollisionEnter2D(Collision2D collision2D){
@@ -140,6 +137,7 @@ public class Player : MonoBehaviour{
         }
 
         if (collision2D.gameObject.CompareTag("Plataformas")){
+            _animator.SetBool("jump", false);
             infoCoinsEarned.text = "";
             instaCoins = 0;
             infoCoinsEarned.fontSize = 25;
@@ -157,8 +155,8 @@ public class Player : MonoBehaviour{
     public void finishGame(){
         finished.SetActive(true);
         finishedScore.text = coins.ToString();
-
     }
+
     public void OnCollisionExit2D(Collision2D collision2D){
         if (collision2D.gameObject.CompareTag("Animal") || collision2D.gameObject.CompareTag("Saw")){
             _spriteRenderer.color = new Color(255, 255, 255);
@@ -197,5 +195,4 @@ public class Player : MonoBehaviour{
     public void exitGame(){
         SceneManager.LoadScene(0);
     }
-
 }
