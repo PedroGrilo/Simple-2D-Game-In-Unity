@@ -61,12 +61,14 @@
     <Compile Include="Assets\2D SpritePack\Demo\Scripts\Portal.cs" />
     <Compile Include="Assets\2D SpritePack\Demo\Scripts\RestartLevel.cs" />
     <Compile Include="Assets\2D SpritePack\Demo\Scripts\Saw.cs" />
+    <Compile Include="Assets\Coins.cs" />
     <Compile Include="Assets\Day Night Cycle\Scripts\DayNightController.cs" />
     <Compile Include="Assets\Day Night Cycle\Scripts\DemoScripts\RoatateCamera.cs" />
     <Compile Include="Assets\FinalVignette\Assets\Scripts\FinalVignette.cs" />
     <Compile Include="Assets\FinalVignette\Assets\Scripts\FinalVignetteCommandBuffer.cs" />
     <Compile Include="Assets\fireball\fireball.cs" />
     <Compile Include="Assets\fish\fishScript.cs" />
+    <Compile Include="Assets\ItemsToBuy.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
@@ -79,6 +81,7 @@
     <Compile Include="Assets\MobileBloom\MobileBloom.cs" />
     <Compile Include="Assets\MobileBloom\Move.cs" />
     <Compile Include="Assets\platform.cs" />
+    <Compile Include="Assets\PlayerStats.cs" />
     <Compile Include="Assets\PlayMenu.cs" />
     <Compile Include="Assets\Realistic Hail Set\Demo Scene\Scripts\DemoSceneController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />

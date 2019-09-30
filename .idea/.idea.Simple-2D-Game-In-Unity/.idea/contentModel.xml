@@ -17,6 +17,7 @@
             </e>
           </e>
         </e>
+        <e p="Coins.cs" t="Include" />
         <e p="Day Night Cycle" t="Include">
           <e p="Editor" t="Include">
             <e p="DayNightControllerEditor.cs" t="Include" />
@@ -49,6 +50,7 @@
         <e p="fish" t="Include">
           <e p="fishScript.cs" t="Include" />
         </e>
+        <e p="ItemsToBuy.cs" t="Include" />
         <e p="Joystick Pack" t="Include">
           <e p="Examples" t="Include">
             <e p="JoystickPlayerExample.cs" t="Include" />
@@ -83,6 +85,7 @@
           <e p="Move.cs" t="Include" />
         </e>
         <e p="platform.cs" t="Include" />
+        <e p="PlayerStats.cs" t="Include" />
         <e p="PlayMenu.cs" t="Include" />
         <e p="Realistic Hail Set" t="Include">
           <e p="Demo Scene" t="Include">

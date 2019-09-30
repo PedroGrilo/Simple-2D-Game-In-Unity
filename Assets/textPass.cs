@@ -15,7 +15,6 @@ public class textPass : MonoBehaviour{
     // Start is called before the first frame update
     void Start(){
         _text = GetComponent<Text>();
-        Debug.Log(moedas);
     }
 
     // Update is called once per frame

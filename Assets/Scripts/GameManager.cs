@@ -47,7 +47,6 @@ public class GameManager : MonoBehaviour{
         if (Convert.ToInt32(lives.text) <= 0){
             game_over.SetActive(true);
             finalScore.text = "Score: " + textCoins.text;
-            Time.timeScale = 0;
         }
         else{
             game_over.SetActive(false);

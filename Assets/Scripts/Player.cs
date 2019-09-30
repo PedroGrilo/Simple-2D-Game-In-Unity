@@ -43,8 +43,10 @@ public class Player : MonoBehaviour{
 
     // Start is called before the first frame update
     void Start(){
-        textCoins.text = coins.ToString();
-        textLives.text = lives.ToString();
+        lives = PlayerStats.Hearts;
+        initialFireBalls = PlayerStats.Fireball;
+        //  textCoins.text = coins.ToString();
+      //  textLives.text = lives.ToString();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
@@ -57,15 +59,17 @@ public class Player : MonoBehaviour{
 
     // Update is called once per frame
     public void Update(){
+        
         textLives.text = lives.ToString();
         textBalls.text = initialFireBalls.ToString();
         textCoins.text = coins.ToString();
 
         float movimento = 0;
 
-        if (lives <= 0)
+        if (lives <= 0){
             _animator.SetBool("die", true);
-
+            Time.timeScale = 0;
+        }
 
         if (joystick.Horizontal >= .3f || joystick.Horizontal <= -.3f)
             movimento = joystick.Horizontal;
@@ -151,11 +155,13 @@ public class Player : MonoBehaviour{
             finishGame();
         }
     }
-
+    
+    
     public void finishGame(){
         finished.SetActive(true);
         finishedScore.text = coins.ToString();
         Time.timeScale = 0;
+        PlayerStats.Coins += coins;
     }
 
     public void OnCollisionExit2D(Collision2D collision2D){
@@ -189,11 +195,11 @@ public class Player : MonoBehaviour{
 
 
     public void restartGame(){
-        Application.LoadLevel(1);
         Time.timeScale = 1;
+        SceneManager.LoadScene(1);
     }
 
     public void exitGame(){
-        SceneManager.LoadScene(0);
-    }
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);}
 }
