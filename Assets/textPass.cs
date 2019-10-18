@@ -23,7 +23,11 @@ public class textPass : MonoBehaviour{
         if (SceneManager.GetSceneByBuildIndex(1).isLoaded){
             text = _text;
             text.text = moedas;
-      
+       }
+        if (SceneManager.GetSceneByBuildIndex(2).isLoaded)
+        {
+            text = _text;
+            text.text = moedas;
         }
     }
 }

@@ -10,6 +10,8 @@ TagManager:
   - fireball
   - Saw
   - endbar
+  - portal
+  - colliderImaginario
   layers:
   - Default
   - TransparentFX

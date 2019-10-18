@@ -2,9 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Portal : MonoBehaviour {
-	public GameObject _portal;
-	void Update () {
-		_portal.transform.Rotate (new Vector3 (0f, 0f, 3f));
-	}
+public class Portal : MonoBehaviour
+{
+
+    private GameObject player;
+    private GameObject target;
+
+    void Update()
+    {
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            player.transform.position = target.transform.position;
+        }
+
+
+    }
 }
